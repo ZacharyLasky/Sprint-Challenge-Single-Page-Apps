@@ -18,5 +18,9 @@ export default function LocationsList() {
       });
   }, []);
 
-  return null;
+  return (
+    <section className="location-list grid-view">
+      <LocationCard locationData={location} />
+    </section>
+  );
 }
