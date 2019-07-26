@@ -16,7 +16,7 @@ export default function EpisodeCard(props) {
     <>
       {episodeData.map(episode => {
         return (
-          <WrapperDiv className="locationWrapper">
+          <WrapperDiv className="episodeWrapper">
             <h1>{episode.name}</h1>
             <h1>{episode.air_date}</h1>
             <h1>{episode.episode}</h1>

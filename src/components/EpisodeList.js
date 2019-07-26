@@ -19,7 +19,7 @@ export default function EpisodeList() {
 
   return (
     <section className="episode-list grid-view">
-      <EpisodeCard EpisodeData={episode} />
+      <EpisodeCard episodeData={episode} />
     </section>
   );
 }
