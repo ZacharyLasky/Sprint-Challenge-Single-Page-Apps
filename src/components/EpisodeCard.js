@@ -7,21 +7,21 @@ const WrapperDiv = styled.div`
   margin-bottom: 50px;
   border: 1px solid black;
   border-radius: 10px;
+  background-color: red;
   text-align: center;
-  background-color: green;
 `;
 
-export default function LocationCard(props) {
+export default function EpisodeCard(props) {
   // image={image}
-  const locationData = props.locationData;
+  const episodeData = props.episodeData;
   return (
     <>
-      {locationData.map(location => {
+      {episodeData.map(episode => {
         return (
-          <WrapperDiv className="locationWrapper">
-            <h1>{location.name}</h1>
-            <h2>{location.type}</h2>
-            <h3>{location.dimension}</h3>
+          <WrapperDiv className="episodeWrapper">
+            <h1>{episode.name}</h1>
+            <h2>{episode.air_date}</h2>
+            <h3>{episode.episode}</h3>
           </WrapperDiv>
         );
       })}
